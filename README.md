@@ -9,11 +9,8 @@ A modern, beautifully designed real estate application built with Flutter using 
 ## ✨ Features
 
 - **Property Listings**: Browse through properties for sale or rent
-- **Property Details**: View detailed information about each property
 - **Map View**: Explore properties on an interactive map with price markers
 - **Animations**: Smooth, engaging animations throughout the app
-- **Filtering**: Filter properties by type (buy or rent)
-- **Search**: Search for properties by location
 - **Beautiful UI**: Clean, modern interface inspired by latest design trends
 
 ## 📱 Screenshots
@@ -32,31 +29,31 @@ This project implements the MVC (Model-View-Controller) architecture pattern to 
 
 ```
 lib/
-├── main.dart                       // Entry point of the application
-├── config/                         // App configuration
-│   ├── constants.dart              // App-wide constants
-│   ├── routes.dart                 // Navigation routes
-│   └── theme.dart                  // App theme configuration
-├── models/                         // M in MVC - Data Models
-│   ├── property.dart               // Property data model
-│   └── user.dart                   // User data model
-├── views/                          // V in MVC - UI components
-│   ├── screens/                    // Full screen UI components
-│   │   ├── home_screen.dart        // Home screen
-│   │   └── map_screen.dart         // Map screen
-│   └── widgets/                    // Reusable UI components
-│       ├── animated_counter.dart   // Counter animation widget
-│       ├── bottom_navigation.dart  // Custom bottom navigation
-│       ├── property_card.dart      // Property card widget
-│       ├── property_card_row.dart  // Row-based property card
-│       └── price_marker.dart       // Map price marker widget
-├── controllers/                    // C in MVC - Business Logic
-│   ├── property_controller.dart    // Property data management
-│   ├── map_controller.dart         // Map view management
-│   └── animation_controller.dart   // Animation control logic
-└── services/                       // External services & data access
-    ├── api_service.dart            // API communication
-    └── location_service.dart       // Location services
+├── main.dart                       
+├── config/                       
+│   ├── constants.dart              
+│   ├── routes.dart                
+│   └── theme.dart                 
+├── models/                        
+│   ├── property.dart              
+│   └── user.dart                   
+├── views/                          
+│   ├── screens/                    
+│   │   ├── home_screen.dart        
+│   │   └── map_screen.dart         
+│   └── widgets/                    
+│       ├── animated_counter.dart   
+│       ├── bottom_navigation.dart 
+│       ├── property_card.dart      
+│       ├── property_card_row.dart  
+│       └── price_marker.dart       
+├── controllers/                    
+│   ├── property_controller.dart    
+│   ├── map_controller.dart         
+│   └── animation_controller.dart   
+└── services/                       
+    ├── api_service.dart            
+    └── location_service.dart       
 ```
 
 ### MVC Implementation Details
@@ -90,7 +87,7 @@ lib/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/real-estate-app.git
+   git clone https://github.com/ayodelesalimon/real-estate-app.git
    ```
 
 2. Navigate to the project directory:
@@ -365,22 +362,6 @@ class AppRoutes {
   }
 }
 ```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👨‍💻 Author
-
-- **Your Name** - [GitHub Profile](https://github.com/ayodelesalimonu)
 
 ## 🙏 Acknowledgements
 
