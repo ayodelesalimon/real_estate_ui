@@ -20,6 +20,12 @@ A modern, beautifully designed real estate application built with Flutter using 
   <img src=https://github.com/ayodelesalimon/real_estate_ui/blob/main/map_screen.png width="250" />
 </div>
 
+## 📱 Video Demo
+
+<div style="display: flex; flex-direction: row; justify-content: space-around;">
+  <video src="https://github.com/ayodelesalimon/real_estate_ui/blob/main/video_demo.mp4" width="180"/>
+</div>
+
 ## 🏗️ Architecture
 
 This project implements the MVC (Model-View-Controller) architecture pattern to ensure separation of concerns and maintainability.
