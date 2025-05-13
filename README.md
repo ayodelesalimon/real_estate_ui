@@ -1,6 +1,6 @@
 # Real Estate App
 
-![Real Estate App Banner](https://via.placeholder.com/1200x300/FFA726/FFFFFF?text=Real+Estate+App)
+![Real Estate App Banner](https://github.com/ayodelesalimon/real_estate_ui/blob/main/banner.png)
 
 ## 📱 Overview
 
@@ -16,9 +16,8 @@ A modern, beautifully designed real estate application built with Flutter using 
 ## 📱 Screenshots
 
 <div style="display: flex; flex-direction: row; justify-content: space-around;">
-  <img src="https://via.placeholder.com/250x500/FFF8E1/000000?text=Home+Screen" width="250" />
-  <img src="https://via.placeholder.com/250x500/000000/FFFFFF?text=Map+Screen" width="250" />
-  <img src="https://via.placeholder.com/250x500/FFF8E1/000000?text=Property+Details" width="250" />
+  <img src="https://github.com/ayodelesalimon/real_estate_ui/blob/main/home_screen.png" width="250" />
+  <img src=https://github.com/ayodelesalimon/real_estate_ui/blob/main/map_screen.png width="250" />
 </div>
 
 ## 🏗️ Architecture
