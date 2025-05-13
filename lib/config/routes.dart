@@ -1,20 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:real_estate_ui/views/map_screen.dart';
 
 import '../views/home_screen.dart';
-import '../views/map_screen.dart';
-import '../views/mzp_screen.dart';
-
+// import '../views/map_screen.dart';
+// import '../views/mzp_screen.dart';
 
 class AppRoutes {
   static const String home = '/';
   static const String map = '/map';
-  
+
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case home:
         return MaterialPageRoute(builder: (_) => const HomeScreen());
       case map:
-        return MaterialPageRoute(builder: (_) => const MapViewScreen());
+        return MaterialPageRoute(
+          builder: (_) => Scaffold(
+            body: const MapViewScreen(),
+          ),
+        );
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

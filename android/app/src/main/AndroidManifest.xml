@@ -24,7 +24,7 @@
         <!-- Update this value to your google maps api key. -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAKnMY50KG_02ACEZsDnV9XmAyQ8gLiA74" />
+            android:value="GOOGLE_MAPS_API_KEY" />
             <meta-data
               android:name="io.flutter.embedding.android.NormalTheme"
               android:resource="@style/NormalTheme"

@@ -85,7 +85,7 @@ class _PropertyCardState extends State<PropertyCard>
         child: Stack(
           children: [
             Positioned.fill(
-              child: Image.network(
+              child: Image.asset(
                 widget.imageUrl,
                 fit: BoxFit.cover,
                 errorBuilder: (context, error, stackTrace) {

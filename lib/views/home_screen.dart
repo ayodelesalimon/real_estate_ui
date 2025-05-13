@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 
 import '../controller/property_controller.dart';
@@ -77,6 +79,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
+              Colors.white.withOpacity(0.1),
+              Colors.white.withOpacity(0.1),
+              Colors.white.withOpacity(0.1),
+              Theme.of(context).colorScheme.primary.withOpacity(0.2),
+              Theme.of(context).colorScheme.primary.withOpacity(0.5),
+              Theme.of(context).colorScheme.primary.withOpacity(0.1),
               Theme.of(context).colorScheme.primary.withOpacity(0.8),
               Theme.of(context).colorScheme.primary.withOpacity(0.4),
             ],
@@ -101,7 +109,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       _buildIntroSection(),
                       const SizedBox(height: 24),
                       _buildTabSelector(),
-                      const SizedBox(height: 24),
+                      const SizedBox(height: 34),
                       _buildPropertiesSection(),
                       SizedBox(height: 26),
                     ],
@@ -115,7 +123,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       bottomNavigationBar: FloatBottomNav(
         isMapView: false,
         onHomePressed: _navigateToMap,
-        onChatPressed: () {},
+        onChatPressed: () {
+          Navigator.pushNamed(context, AppRoutes.map);
+        },
       ),
     );
   }
@@ -137,7 +147,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: Colors.white.withOpacity(0.8),
                 borderRadius: BorderRadius.circular(16),
               ),
               child: Row(
@@ -192,8 +202,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 image: const DecorationImage(
-                  image: NetworkImage(
-                      'https://randomuser.me/api/portraits/women/32.jpg'),
+                  image: AssetImage('assets/images/agent1.jpg'),
                   fit: BoxFit.cover,
                 ),
                 border: Border.all(
@@ -226,7 +235,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             'Hi, Marina',
             style: TextStyle(
               fontSize: 24,
-              color: Colors.grey[600],
+              color: Colors.brown[600],
               fontWeight: FontWeight.w500,
             ),
           ),
@@ -258,7 +267,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 },
                 child: AnimatedCounter(
                   isBuy: true,
-                  count: _propertyController.buyCount,
+                  count: 1034,
                 ),
               ),
             ),
@@ -270,7 +279,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 },
                 child: AnimatedCounter(
                   isBuy: false,
-                  count: _propertyController.rentCount,
+                  count: 2212,
                 ),
               ),
             ),
@@ -292,7 +301,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     final properties = _propertyController.properties;
 
     return Container(
-      padding: EdgeInsets.all(18),
+      padding: EdgeInsets.all(8),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(24),

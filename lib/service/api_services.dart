@@ -17,7 +17,7 @@ class ApiService {
       Property(
         id: '1',
         address: 'Gladkova St., 25',
-        imageUrl: 'https://images.unsplash.com/photo-1484154218962-a197022b5858',
+        imageUrl: 'assets/images/home.jpeg',
         price: 10300000,
         type: 'BUY',
         latitude: 59.9342802,
@@ -27,7 +27,7 @@ class ApiService {
       Property(
         id: '2',
         address: 'Trefoleva St., 43',
-        imageUrl: 'https://images.unsplash.com/photo-1484154218962-a197022b5858',
+        imageUrl: 'assets/images/home2.jpeg',
         price: 8500000,
         type: 'BUY',
         latitude: 59.9392802,
@@ -36,8 +36,8 @@ class ApiService {
       ),
       Property(
         id: '3',
-        address: 'Lenina St., 15',
-        imageUrl: 'https://images.unsplash.com/photo-1484154218962-a197022b5858',
+        address:'Gladkova St., 25',
+        imageUrl: 'assets/images/home3.jpeg',
         price: 7600000,
         type: 'RENT',
         latitude: 59.9292802,
@@ -47,7 +47,7 @@ class ApiService {
       Property(
         id: '4',
         address: 'Mira Ave., 76',
-        imageUrl: 'https://images.unsplash.com/photo-1484154218962-a197022b5858',
+        imageUrl: 'assets/images/home3.jpeg',
         price: 9500000,
         type: 'RENT',
         latitude: 59.9272802,

@@ -3,7 +3,7 @@ class Property {
   final String address;
   final String imageUrl;
   final double price;
-  final String type; // 'BUY' or 'RENT'
+  final String type; 
   final double latitude;
   final double longitude;
   final String description;

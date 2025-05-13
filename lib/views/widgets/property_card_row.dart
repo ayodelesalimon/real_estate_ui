@@ -86,7 +86,7 @@ class _PropertyCardRowState extends State<PropertyCardRow>
           child: Stack(
             children: [
               Positioned.fill(
-                child: Image.network(
+                child: Image.asset(
                   widget.imageUrl,
                   fit: BoxFit.cover,
                   errorBuilder: (context, error, stackTrace) {

@@ -208,35 +208,7 @@ class PropertyController with ChangeNotifier {
     notifyListeners();
   }
 }
-```
 
-### MapController
-
-Handles map-related functionality and UI state:
-
-```dart
-class MapController with ChangeNotifier {
-  // Singleton instance
-  static final MapController _instance = MapController._internal();
-  factory MapController() => _instance;
-  MapController._internal();
-  
-  // State
-  final Completer<GoogleMapController> mapCompleter = Completer();
-  bool isMapView = true;
-  bool showListOfVariants = false;
-  
-  // Methods
-  void toggleView() {
-    isMapView = !isMapView;
-    showListOfVariants = !showListOfVariants;
-    notifyListeners();
-  }
-  
-  Set<Marker> createMarkers(List<Property> properties) {
-    // Create markers from properties
-  }
-}
 ```
 
 ## 🎨 UI Components
@@ -321,11 +293,11 @@ class HomeScreen extends StatefulWidget {
 Interactive map displaying property locations with price markers:
 
 ```dart
-class MapScreen extends StatefulWidget {
-  const MapScreen({Key? key}) : super(key: key);
+class MapViewScreen extends StatefulWidget {
+  const MapViewScreen({Key? key}) : super(key: key);
 
   @override
-  State<MapScreen> createState() => _MapScreenState();
+  State<MapViewScreen> createState() => _MapViewScreenState();
 }
 ```
 
@@ -368,5 +340,4 @@ class AppRoutes {
 - [Flutter](https://flutter.dev/)
 - [Google Maps Flutter](https://pub.dev/packages/google_maps_flutter)
 - [Google Fonts](https://pub.dev/packages/google_fonts)
-- [Unsplash](https://unsplash.com/) for the property images
 - [Material Design Icons](https://material.io/resources/icons/)
